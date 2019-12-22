@@ -2,7 +2,7 @@
 
 Dockerfile and scripts to setup a production ready Mongo container with user authentication and SSL configuration
 
-> Example project https://github.com/duluca/minimal-mean
+> Example project https://github.com/duluca/lemon-mart-server
 
 ## Key features:
 
@@ -35,7 +35,7 @@ MONGODB_APPLICATION_PASS=app_password
 
 ## Sample Usage with docker-compose
 
-Full source code: https://github.com/duluca/minimal-mean
+Full source code: https://github.com/duluca/lemon-mart-server
 
 docker-compose.yml
 
@@ -60,7 +60,7 @@ services:
       - database
 
   database:
-    image: duluca/mongo
+    image: excellalabs/mongo
     env_file: .env
     ports:
       - '27017:27017'
